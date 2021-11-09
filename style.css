@@ -30,11 +30,27 @@
       color: darkblue; 
    }
 }
-.h3 b{
+.h3 b, .h4 b{
    color: darkgoldenrod;
 }
-.h3{
+.h3, .h4{
    text-decoration: underline;
+}
+.h3{
+   animation: align1 5s 1;
+}
+.h4{
+   animation: align2 5s 1;
+}
+@keyframes align1{
+     0%{
+      margin-left: 2000px;
+     }
+}
+@keyframes align2{
+      0%{
+         margin-right: 2000px;
+      }
 }
 .change1{
    animation: change1 3s 3;
@@ -103,4 +119,83 @@
      100%{ 
       color: brown; 
    }
+}
+.text strong{
+   animation: initials 5s infinite;
+}
+.text{
+   font-size: 150%;
+   animation: appear 5s 1;
+}
+@keyframes appear{
+     0%{
+      visibility: hidden;
+   }
+     100%{ 
+      visibility: visible; 
+   }
+}
+.slider{
+  width: 40%;
+  height: 45vh;
+  overflow: hidden;
+  position: absolute;
+  top: 70%;
+  left: 24%;
+  transform: translate(-50%,-50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.icon{
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  border: 3px solid white;
+  margin: 10px;
+  cursor: pointer;
+  caret-color: transparent;
+}
+input[name="radio"]{
+  position: absolute;
+  visibility: hidden;
+}
+
+.list{
+  width: 400%;
+  height: 50vh;
+  display: flex;
+}
+
+.img{
+  width: 100%;
+  transition: 0.6s;
+}
+img{
+  width: 100%;
+  height: 50vh;
+}
+
+#box1:checked ~ .img{
+  margin-left: 1px;
+}
+#box2:checked ~ .img{
+  margin-left: -25%;
+}
+#box3:checked ~ .img{
+  margin-left: -50%;
+}
+#box4:checked ~ .img{
+  margin-left: -75%;
+}
+
+video{
+   position: absolute;
+   width: 40%;
+   left: 50%;
+   bottom: 7.7%;
 }
