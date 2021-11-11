@@ -2,8 +2,9 @@ body{
    margin: 0;
    padding: 0;
    background-image: url(img/background.jfif);
+   /* background-size: auto; */
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: 150%;
 }
 p, li{
    color: lightsteelblue;
