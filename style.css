@@ -10,9 +10,27 @@ p, li{
    color: lightsteelblue;
    position: relative;
 }
+em{
+   animation: align1 3s 1;
+}
+i{
+   animation: align2 3s 1;
+}
 li{
    text-align: center;
    list-style: none;
+   animation: list 3s 1;
+}
+em{
+   animation: align1 3s 1;
+}
+i{
+   animation: align2 3s 1;
+}
+@keyframes list{
+   0%{
+   margin-left: 3000px;
+   }
 }
 .title{
    text-decoration: underline;
