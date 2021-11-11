@@ -13,7 +13,7 @@ p, li{
    text-decoration: underline;
    font-weight: bold;
    font-size: 2em;
-   color: purple;
+   color: lavenderblush;
    animation: background-change 3s 2;
 }
 @keyframes background-change{
@@ -150,17 +150,17 @@ p, li{
 }
 .slider{
   width: 40%;
-  height: 50vh;
+  height: 100vh;
   overflow: hidden;
   position: absolute;
-  top: 80%;
+  top: 105%;
   left: 24%;
   transform: translate(-50%,-50%);
 }
 .navigation{
   position: absolute;
-  bottom: 20px;
   left: 50%;
+  top: 47%;
   transform: translateX(-50%);
   display: flex;
 }
@@ -185,7 +185,7 @@ input[name="radio"]{
 }
 
 .img{
-  width: 100%;
+  width: 30%;
   transition: 0.6s;
 }
 img{
@@ -194,16 +194,16 @@ img{
 }
 
 #box1:checked ~ .a1{
-  margin-left: 1px;
+  margin-left: 1%;
 }
 #box2:checked ~ .a2{
-  margin-left: -35%;
+  margin-left: -30%;
 }
-#box3:checked ~ .a3{
-  margin-left: -100%;
+#box3:checked ~ .a2{
+  margin-left: -60%;
 }
 #box4:checked ~ .a4{
-  margin-left: -75%;
+  margin-left: -90%;
 }
 em{
    animation: align1 3s 1;
