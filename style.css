@@ -10,6 +10,10 @@ p, li{
    color: lightsteelblue;
    position: relative;
 }
+li{
+   text-align: center;
+   list-style: none;
+}
 .title{
    text-decoration: underline;
    font-weight: bold;
@@ -148,9 +152,4 @@ p, li{
      100%{ 
       visibility: visible; 
    }
-}
-iframe{
-   width: 35%;
-    height: 40vh;
-    margin-left: 30%;
 }
